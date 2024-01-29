@@ -1,11 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #bf1e2e;
+  --blue: #12356d;
+}
 
 body {
   font-family: "Raleway", sans-serif !important;
 }
 
+.container{
+  padding-inline: 160px;
+}
+span {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+/* -
+----Icon css-----  */
+.faSearch {
+  color: #fff;
+}
+
+.io5 {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.io5:is(:hover, :focus-within) {
+  background-color: var(--red);
+  color: #fff;
+}
+
+/* ----- ReUsed Style ----- */
+.section-block {
+  padding-block: 60px;
+}
+
+.section-content h2.section-title {
+  font-weight: 800;
+  font-size: 35px;
+  color: var(--blue);
+  text-transform: capitalize;
+}
+
+.section-subtitle a{
+  font-weight: 600;
+  font-size: 19px;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.section-subtitle:is(:hover, :focus-within) a{
+  color: var(--blue);
+}
+.img-holder {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.img-cover {
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.img-holder:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.1);
+}
+
+/* -----HomePage----- */
 .navbar {
-  background-color: #bf1e2e;
+  background-color: var(--red);
 }
 
 .nav-item .nav-link {
@@ -20,9 +106,6 @@ body {
   color: #fff;
 }
 
-.faSearch {
-  color: #fff;
-}
 .np {
   font-weight: 900;
   font-size: 15px;
@@ -31,7 +114,25 @@ body {
   border-radius: 50%;
   color: #fff;
 }
+
 .np:is(:hover, :focus-within) {
-  background-color: #12356d;
-  border-color: #12356d;
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+figure {
+  position: relative;
+}
+
+.img-caption {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+}
+
+.thumb{
+  border-radius: 6px;
 }
