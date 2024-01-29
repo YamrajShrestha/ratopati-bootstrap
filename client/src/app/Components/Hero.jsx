@@ -20,7 +20,7 @@ const Hero = () => {
                   src="/image/oli.jpg"
                   alt="Picture of the author"
                   width={640}
-                  height={380}
+                  height={400}
                   className="img-cover"
                 />
                 <h3 className="img-caption">
@@ -47,6 +47,7 @@ const Hero = () => {
                       as Binod Bhandari breaks record in PM Cup{" "}
                     </a>
                   </h4>
+                  <hr />
                 </div>
                 <div className="col-lg-3">
                   <Image
@@ -64,6 +65,7 @@ const Hero = () => {
                       as Binod Bhandari breaks record in PM Cup{" "}
                     </a>
                   </h4>
+                  <hr />
                 </div>
                 <div className="col-lg-3">
                   <Image
@@ -81,6 +83,7 @@ const Hero = () => {
                       as Binod Bhandari breaks record in PM Cup{" "}
                     </a>
                   </h4>
+                  <hr />
                 </div>
               </div>
             </div>
