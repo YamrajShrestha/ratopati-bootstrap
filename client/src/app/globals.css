@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.navbar {
+  background-color: #bf1e2e;
+}
+
+.nav-item .nav-link {
+  font-weight: 900;
+  font-size: 15px;
+  color: #cccccc;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.nav-item:is(:hover, :focus-within) .nav-link {
+  color: #fff;
+}
+
+.faSearch {
+  color: #fff;
+}
+.np {
+  font-weight: 900;
+  font-size: 15px;
+  transition: 0.3s ease;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+.np:is(:hover, :focus-within) {
+  background-color: #12356d;
+  border-color: #12356d;
+}
